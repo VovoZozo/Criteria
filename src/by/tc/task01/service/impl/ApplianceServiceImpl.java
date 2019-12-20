@@ -12,33 +12,33 @@ import by.tc.task01.entity.criteria.Criteria;
 import by.tc.task01.service.ApplianceService;
 import by.tc.task01.service.validation.Validator;
 
-public class ApplianceServiceImpl implements ApplianceService{
+public class ApplianceServiceImpl implements ApplianceService {
 
 	@Override
 	public List<Appliance> find(Criteria criteria) {
-		
+
 		if (!Validator.criteriaValidator(criteria)) {
 			return null;
 		}
-		
+
 		DAOFactory factory = DAOFactory.getInstance();
-		
+
 		ApplianceDAO applianceDAO = factory.getApplianceDAO();
-		
+
 		List<Appliance> appliances = new ArrayList<Appliance>();
-		
+
 		try {
-			
+
 			appliances = applianceDAO.find(criteria);
-			
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		// you may add your own code here
-		
+
 		return appliances;
 	}
 

@@ -2,20 +2,20 @@ package by.tc.task01.entity;
 
 import java.util.Objects;
 
-public class Refrigerator extends Appliance{
-	
+public class Refrigerator extends Appliance {
+
 	private int powerConsumption;
 	private double weight;
 	private int freezerCapacity;
 	private int overallCapacity;
 	private double height;
 	private double width;
-	
+
 	public Refrigerator() {
 	}
 
-	public Refrigerator(int powerConsumption, double weight, int freezerCapacity, int overallCapacity,
-			double height, double width) {
+	public Refrigerator(int powerConsumption, double weight, int freezerCapacity, int overallCapacity, double height,
+			double width) {
 		super(Refrigerator.class.getSimpleName());
 		this.powerConsumption = powerConsumption;
 		this.weight = weight;
@@ -104,7 +104,5 @@ public class Refrigerator extends Appliance{
 				+ freezerCapacity + ", overallCapacity=" + overallCapacity + ", height=" + height + ", width=" + width
 				+ "]";
 	}
-
-	
 
 }

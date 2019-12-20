@@ -22,7 +22,6 @@ public class Oven extends Appliance {
 		this.depth = depth;
 		this.height = heigth;
 		this.width = width;
-
 	}
 
 	public int getPowerConsumption() {

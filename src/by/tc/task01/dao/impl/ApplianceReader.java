@@ -8,24 +8,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ApplianceReader {
-	
+
 	private FileReader reader;
 
 	public ApplianceReader(String fileName) throws FileNotFoundException {
-		
-		
+
 		reader = new FileReader(fileName);
-		
+
 	}
 
 	public List<String> read(String applianceType) throws IOException {
-		
+
 		if (applianceType == null) {
 			return readAll();
 		} else {
 			return readWithType(applianceType);
 		}
-		
+
 	}
 
 	private List<String> readAll() throws IOException {
