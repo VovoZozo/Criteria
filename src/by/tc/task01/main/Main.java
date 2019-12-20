@@ -20,7 +20,7 @@ public class Main {
 		//////////////////////////////////////////////////////////////////
 
 		Criteria criteriaOven = new Criteria(Oven.class.getSimpleName());//"Oven"
-		criteriaOven.add(Oven.CAPACITY.toString(), 32);
+		criteriaOven.add(Oven.CAPACITY.toString(), 33);
 
 		appliances = service.find(criteriaOven);
 
@@ -34,7 +34,7 @@ public class Main {
 
 		appliances = service.find(criteriaOven);
 
-		//PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances);
 
 		//////////////////////////////////////////////////////////////////
 		
@@ -45,7 +45,7 @@ public class Main {
 
 		appliances = service.find(criteriaTabletPC);// find(Object...obj)
 
-		//PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances);
 		
 		
 	}
