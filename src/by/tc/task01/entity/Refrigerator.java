@@ -16,7 +16,7 @@ public class Refrigerator extends Appliance{
 
 	public Refrigerator(int powerConsumption, double weight, int freezerCapacity, int overallCapacity,
 			double height, double width) {
-
+		super(Refrigerator.class.getSimpleName());
 		this.powerConsumption = powerConsumption;
 		this.weight = weight;
 		this.freezerCapacity = freezerCapacity;

@@ -16,7 +16,7 @@ public class Laptop extends Appliance {
 
 	public Laptop(int batteryCapacity, String operatingSystem, int memoryRom, int systemMemory,
 			double centralProcessingUnit, int displayInchs) {
-
+		super(Laptop.class.getSimpleName());
 		this.batteryCapacity = batteryCapacity;
 		this.operatingSystem = operatingSystem;
 		this.memoryRom = memoryRom;

@@ -13,7 +13,7 @@ public class Speakers extends Appliance {
 	}
 
 	public Speakers(int powerConsumption, int numberOfSpeakers, String frequencyRange, int cordLength) {
-
+		super(Speakers.class.getSimpleName());
 		this.powerConsumption = powerConsumption;
 		this.numberOfSpeakers = numberOfSpeakers;
 		this.frequencyRange = frequencyRange;
